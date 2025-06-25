@@ -78,6 +78,14 @@ public sealed partial class CCVars
         CVarDef.Create("ui.admin_player_tab_color", "Both", CVar.CLIENTONLY | CVar.ARCHIVE);
 
     /// <summary>
+    /// Determines what left click does on a player tab entry.
+    /// ViewVariable: Opens the variable view for the player.
+    /// Follow: Follows the player.
+    /// </summary>
+    public static readonly CVarDef<string> AdminPlayerTabLeftClickAction =
+        CVarDef.Create("ui.admin_player_tab_left_click_action", "ViewVariable", CVar.CLIENTONLY | CVar.ARCHIVE);
+
+    /// <summary>
     /// Determines what's displayed in the Role column - role type, subtype, or both.
     /// RoleType
     /// SubType

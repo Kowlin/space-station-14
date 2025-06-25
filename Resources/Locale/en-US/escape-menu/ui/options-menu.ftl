@@ -381,6 +381,10 @@ ui-options-admin-player-tab-color-setting-character = Colorize antag character n
 ui-options-admin-player-tab-color-setting-roletype = Colorize all role types
 ui-options-admin-player-tab-color-setting-both = Colorize both
 
+ui-options-admin-player-tab-left-click-action-setting = Left-click action
+ui-options-admin-player-tab-left-click-action-setting-viewvariable = View Variable
+ui-options-admin-player-tab-left-click-action-setting-follow = Follow
+
 ui-options-admin-overlay-title = Admin Overlay
 
 ui-options-admin-overlay-antag-format = Antag label style

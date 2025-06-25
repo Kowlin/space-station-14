@@ -39,6 +39,12 @@ public sealed partial class AdminOptionsTab : Control
             playerTabColorSettings.Add(new OptionDropDownCVar<string>.ValueOption(setting.ToString()!, Loc.GetString($"ui-options-admin-player-tab-color-setting-{setting.ToString()!.ToLower()}")));
         }
 
+        var playerTabLeftClickActionSettings = new List<OptionDropDownCVar<string>.ValueOption>();
+        foreach (var action in Enum.GetValues(typeof(AdminPlayerTabLeftClickActionOption)))
+        {
+            playerTabLeftClickActionSettings.Add(new OptionDropDownCVar<string>.ValueOption(action.ToString()!, Loc.GetString($"ui-options-admin-player-tab-left-click-action-setting-{action.ToString()!.ToLower()}")));
+        }
+
         var playerTabRoleSettings = new List<OptionDropDownCVar<string>.ValueOption>();
         foreach (var setting in Enum.GetValues(typeof(AdminPlayerTabRoleTypeOption)))
         {
@@ -54,6 +60,7 @@ public sealed partial class AdminOptionsTab : Control
         Control.AddOptionDropDown(CCVars.AdminPlayerTabSymbolSetting, DropDownPlayerTabSymbolSetting, playerTabSymbolSettings);
         Control.AddOptionDropDown(CCVars.AdminPlayerTabRoleSetting, DropDownPlayerTabRoleSetting, playerTabRoleSettings);
         Control.AddOptionDropDown(CCVars.AdminPlayerTabColorSetting, DropDownPlayerTabColorSetting, playerTabColorSettings);
+        Control.AddOptionDropDown(CCVars.AdminPlayerTabLeftClickAction, DropDownPlayerTabLeftClickActionSetting, playerTabLeftClickActionSettings);
 
         Control.AddOptionDropDown(CCVars.AdminOverlayAntagFormat, DropDownOverlayAntagFormat, antagFormats);
         Control.AddOptionDropDown(CCVars.AdminOverlaySymbolStyle, DropDownOverlayAntagSymbol, antagSymbolStyles);

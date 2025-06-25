@@ -22,3 +22,9 @@ public enum AdminPlayerTabSymbolOption
     Basic,
     Specific
 }
+
+public enum AdminPlayerTabLeftClickActionOption
+{
+    ViewVariable,
+    Follow
+}
